@@ -1,0 +1,166 @@
+@media screen and (max-width: 650px) {
+body{
+  overflow-x: hidden; /* ← 追加！ */
+}
+
+    img{max-width:100%;
+        height: auto;
+    }
+    .top,main,.skill{
+        font-size: 1rem;
+        max-width:640px;
+
+    }
+
+    main h2{
+    font-size:2rem;
+    margin:2rem 0;
+}
+    .top{
+         text-align: center;
+         z-index: 3;
+         position: relative;
+         margin: 0 auto;
+         overflow: hidden; /* ← 画像はみ出さない */
+    }
+
+     .top .top_img{
+        z-index: 1;
+        width:100%;
+        height: auto;
+        position: absolute;
+        top:-10%;
+        left: -5%;
+    }
+
+     
+    .title{
+        position: relative;
+        z-index: 2;
+        margin:2.813rem auto;
+        padding: 2.5vh;
+        max-width: 42.8vh;
+        font-size:1.5rem;
+    }
+
+
+/* =================
+    メイン
+=================*/
+.opening{
+  position: relative;
+}
+.opening .content {
+        flex-basis: 78%; /* flexアイテムの幅を数値で指定 */
+        margin-left: 2rem;
+        margin-top: 0rem;
+}
+
+.opening article img:nth-of-type(1){
+  right: -40%; /* イラストを右に寄せる */
+  position: absolute;
+}
+
+
+.opening .line-dragon{
+  position: absolute;
+  top: 19rem;
+  left: -25%;/* イラストを左に寄せる */
+}
+
+.important{
+  position: relative;
+}
+
+.important .content{
+  flex-basis: 60%; /* flexアイテムの幅を数値で指定 */
+  margin-top: 8rem;
+  margin-left: 2rem;
+}
+
+.important img{
+  position: absolute;
+  top:2rem;
+  right: -40%; /* イラストを右に寄せる */
+}
+
+.futurity {
+   position: relative;
+}
+
+.futurity .content{
+  flex-basis: auto; /* flexアイテムの幅を数値で指定 */
+  margin:0 1.8rem 0 auto;
+  max-width: 60%;
+}
+
+
+.futurity img{
+  position: absolute;
+  flex-shrink: 0;
+  top:-5rem;
+  left: -10%; /* イラストを左に寄せる */
+}
+
+
+
+.skill{
+  padding:1.063rem;
+  text-align: center;
+}
+
+.skill h2{
+  margin:2.188rem auto;
+}
+.skill article{
+  width: 98%;
+  background-color:#ffffff;
+  padding: 3rem;
+  margin: 0 auto;
+ 
+}
+
+.list dl{
+  display: flex;
+  font-size:2rem;
+  margin:1.063rem;
+}
+
+.likes{
+  position: relative;
+}
+.like_img{
+  position: absolute;
+  left: -30%;
+  bottom:0;
+}
+
+.likes article{
+margin:0 1.8rem 3.5rem auto;
+  flex-basis: 60%; /* flexアイテムの幅を数値で指定 */
+}
+
+.likes .content:nth-of-type(2){
+  margin-top: 6.25rem;
+}
+
+.likes .content p:nth-of-type(1){
+margin-bottom:2.5rem;
+}
+
+
+/* =====================
+    トップへ戻るボタン
+=====================*/
+ .to-top {
+    right: 1rem;
+    transform: none;
+  }
+
+  .button{
+    width: 3.813rem;
+    font-size:1rem;
+    padding:0.5rem;
+  }
+   
+ }

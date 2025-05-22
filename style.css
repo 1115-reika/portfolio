@@ -1,0 +1,233 @@
+/* =================
+    リセットCSS 
+=================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body, div, span /* ... */ {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* =================
+    全体 
+=================*/
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  text-align: center;
+}
+a{
+  text-decoration:none;
+}
+
+.clear{
+  display: block;
+}
+
+
+
+/* =================
+    トップ
+=================*/
+
+header{
+  background-color:#B2FA00;
+}
+
+.top{
+    width: 1000px;
+      margin: 0px auto;
+  text-align: left;
+  display: flex;
+}
+.title{
+  width: 428px;
+  height: 351px;
+  margin:auto;
+  padding:25px;
+  text-align: center;
+  background-color:#1B1B1B;
+  color:#ffffff;
+  font-size:24px;
+  
+}
+.title p{
+  margin:-10px auto 20px;
+}
+.mails{
+  margin: 0 auto;  /* ← 中央寄せのためにこれが必要！ */
+  width: 290px;
+ text-align: center;
+}
+
+.mails a{
+   display: block;
+ color:#1B1B1B;
+  font-size:32px;
+  font-weight: 700;
+  padding: 8px 0px 8px;
+  background-color:#B2FA00;
+ border-radius: 5px;
+
+}
+
+.mails a:hover{
+ background-color:#8EDD43; 
+}
+
+
+
+/* =================
+    メイン
+=================*/
+main{
+  display:block;
+    max-width: 1000px;
+    margin: 0px auto;
+  text-align: left;
+}
+
+main h2{
+    font-size:32px;
+    margin:30px 0;
+}
+
+.opening article{
+display: flex;
+}
+.opening .content{
+  flex-basis: 55%; /* flexアイテムの幅を数値で指定 */
+  margin-left: 94px;
+  margin-top: 94px;
+}
+.opening .content p:nth-of-type(1){
+  margin-bottom: 36px;
+}
+
+.opening article img:nth-of-type(1){
+  margin-left: auto; /* イラストを右に寄せる */
+}
+
+.opening .line-dragon{
+  margin-top: -40px;
+  margin-right: auto;/* イラストを左に寄せる */
+}
+
+.important{
+  margin:96px auto;
+}
+
+.important article{
+display: flex;
+}
+
+.important .content{
+  flex-basis: 48%; /* flexアイテムの幅を数値で指定 */
+  margin-left: 94px;
+}
+.important img{
+  margin-left: auto; /* イラストを右に寄せる */
+}
+
+.important .content p:nth-of-type(2){
+  margin-top: 36px;
+}
+
+.futurity{
+  margin-bottom:50px;
+}
+
+.futurity article{
+display: flex;
+}
+
+.futurity .content{
+  margin:0px 94px 0px 33px;
+}
+
+.skill{
+  display:block;
+  background-color:#B2FA00;
+  text-align: center;
+  padding:63px;
+}
+
+.skill h2{
+  margin:-30px auto 40px;
+}
+
+.skill article{
+  width: 877px;
+  background-color:#ffffff;
+  padding: 96px;
+ 
+}
+
+
+
+.list dl{
+  display: flex;
+  font-size:32px;
+  margin:20px;
+}
+
+
+
+.list dt{
+  width:50%;
+  text-align: left;
+}
+
+.list dd{
+  width:50%;
+}
+
+.likes{
+display: flex;
+}
+
+.likes article{
+  margin: 96px;
+  flex-basis: 48%; /* flexアイテムの幅を数値で指定 */
+}
+
+.likes .content:nth-of-type(2){
+  margin-top: 100px;
+}
+
+.likes .content p:nth-of-type(1){
+margin-bottom:40px;
+}
+
+/* =====================
+    トップへ戻るボタン
+=====================*/
+.to-top{
+  z-index: 1000;
+   position: fixed;
+   right: 50%;
+   bottom: 20px;
+   transform: translateX(500px); /* 1000px の半分 */
+}
+
+.button{
+  display: block;
+width: 91px;
+  margin-left: auto;
+  background-color:#1B1B1B;
+  text-align: center;
+   color:#ffffff;
+   font-size:24px;
+   padding:8px;
+
+}
+
+.button:hover{ 
+  background-color:#8EDD43; 
+}
+
+
