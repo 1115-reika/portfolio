@@ -1,21 +1,28 @@
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 640px) {
 body{
-  overflow-x: hidden; /* ← 追加！ */
+  margin: 0;
+  padding:0;
+  line-height: 1.6;
 }
 
-    img{max-width:100%;
-        height: auto;
-    }
+ 
     .top,main,.skill{
         font-size: 1rem;
-        max-width:640px;
+        max-width:100%;
 
     }
+
+
+
 
     main h2{
     font-size:2rem;
-    margin:2rem 0;
+    margin:1rem 0;
 }
+
+ main{
+  overflow: hidden;
+ }
     .top{
          text-align: center;
          z-index: 3;
@@ -26,11 +33,11 @@ body{
 
      .top .top_img{
         z-index: 1;
-        width:100%;
+        width:600px;
         height: auto;
         position: absolute;
-        top:-10%;
-        left: -5%;
+        top: -10%;
+        left: -26%;
     }
 
      
@@ -40,32 +47,45 @@ body{
         margin:2.813rem auto;
         padding: 2.5vh;
         max-width: 42.8vh;
+        height: auto;
         font-size:1.5rem;
+    }
+
+    .title img{
+      max-width: 100%;
+    }
+
+    .mails{
+     width: 100%;
     }
 
 
 /* =================
     メイン
 =================*/
+
 .opening{
   position: relative;
 }
+
 .opening .content {
-        flex-basis: 78%; /* flexアイテムの幅を数値で指定 */
-        margin-left: 2rem;
-        margin-top: 0rem;
+          flex-basis: 65%;
+            margin-left: 2rem;
+            margin-top: 0rem;
 }
 
+
+
 .opening article img:nth-of-type(1){
-  right: -40%; /* イラストを右に寄せる */
+  right: -60%; /* イラストを右に寄せる */
   position: absolute;
 }
 
 
 .opening .line-dragon{
   position: absolute;
-  top: 19rem;
-  left: -25%;/* イラストを左に寄せる */
+  top: 20rem;
+  right: 22%;
 }
 
 .important{
@@ -73,16 +93,19 @@ body{
 }
 
 .important .content{
-  flex-basis: 60%; /* flexアイテムの幅を数値で指定 */
+  flex-basis: 70%; /* flexアイテムの幅を数値で指定 */
   margin-top: 8rem;
   margin-left: 2rem;
 }
 
 .important img{
   position: absolute;
-  top:2rem;
-  right: -40%; /* イラストを右に寄せる */
+  top: 5.6rem;
+   right: -80%; /* イラストを右に寄せる */
 }
+
+
+
 
 .futurity {
    position: relative;
@@ -98,8 +121,8 @@ body{
 .futurity img{
   position: absolute;
   flex-shrink: 0;
-  top:-5rem;
-  left: -10%; /* イラストを左に寄せる */
+  top:-10rem;
+  left: -40%; /* イラストを左に寄せる */
 }
 
 
@@ -115,15 +138,15 @@ body{
 .skill article{
   width: 98%;
   background-color:#ffffff;
-  padding: 3rem;
+  padding: 1rem;
   margin: 0 auto;
  
 }
 
 .list dl{
   display: flex;
-  font-size:2rem;
-  margin:1.063rem;
+  font-size:1.675rem;
+  margin:1.063rem 0px;
 }
 
 .likes{
@@ -131,7 +154,7 @@ body{
 }
 .like_img{
   position: absolute;
-  left: -30%;
+  left: -52%;
   bottom:0;
 }
 
@@ -140,22 +163,29 @@ margin:0 1.8rem 3.5rem auto;
   flex-basis: 60%; /* flexアイテムの幅を数値で指定 */
 }
 
-.likes .content:nth-of-type(2){
-  margin-top: 6.25rem;
+
+.likes .content:nth-of-type(2) {
+    margin-top: 6rem;
+    margin-bottom: 3.4375rem;
 }
 
-.likes .content p:nth-of-type(1){
-margin-bottom:2.5rem;
+.likes .content:nth-of-type(1) {
+    margin-top: 4rem;
 }
+
 
 
 /* =====================
     トップへ戻るボタン
 =====================*/
  .to-top {
-    right: 1rem;
+    right: 0%;
     transform: none;
   }
+
+   .to-top img{
+    max-width:100%;
+   }
 
   .button{
     width: 3.813rem;
